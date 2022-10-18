@@ -31,6 +31,9 @@ echo running applications and services :>>client_device_information.txt
 ps -a>>client_device_information.txt
 echo ------------------------------------------------------------>>client_device_information.txt
 #open ports
+#-a: Show both listening and non-listening sockets. With the –interfaces option, show interfaces that are not up.
+#-t: Enables the listing of TCP ports.
+#-u: Enables the listing of UDP ports.
 echo open ports :>>client_device_information.txt
 netstat -atu>>client_device_information.txt
 echo ------------------------------------------------------------>>client_device_information.txt
